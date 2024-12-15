@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drawing App</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="navigation">
+      <div class="color" data-color="white"></div>
+      <div class="color" data-color="yellow"></div>
+      <div class="color" data-color="orange"></div>
+      <div class="color" data-color="green"></div>
+      <div class="color" data-color="blue"></div>
+      <div class="color" data-color="purple"></div>
+      <div class="color" data-color="red"></div>
+      <div class="color" data-color="black"></div>
+      <button class="clear">Clear</button>
+      <button class="save">Save</button>
+      <input type="color" value="#ffffff" id="favcolor" />
+      <input
+        type="range"
+        name="rangeInputName"
+        id="rangeInputId"
+        value="5"
+        min="1"
+        max="10"
+        oninput="rangeOutputId.value = rangeInputId.value"
+      />
+      <output class="rangeOutputId">5</output>
+      <div class="emoji">🎨</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
